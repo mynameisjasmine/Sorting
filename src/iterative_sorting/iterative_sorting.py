@@ -26,9 +26,25 @@ def selection_sort(arr):
 # print('Check:', selection_sort(arr1)) 
 
 # TO-DO:  implement the Bubble Sort function below
-# def bubble_sort( arr ):
+def bubble_sort( arr ):
+       for i in range(0, len(arr)-1):
+           curr_index = i
+           smaller_index = curr_index
 
-#     return arr
+           for j in range(curr_index, len(arr)):
+               if arr[j] < arr[curr_index] :
+                
+                   arr[j], arr[smaller_index] = arr[smaller_index], arr[j]
+               
+                    # continue
+                
+
+
+     
+       return arr
+
+arr1 = [1, 5, 8, 4, 2, 9, 6, 0, 3, 7]
+print('Checking bubble', bubble_sort(arr1))
 
 
 # STRETCH: implement the Count Sort function below
